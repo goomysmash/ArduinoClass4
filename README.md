@@ -98,7 +98,7 @@
   - `if(bitRead(counter, 1) == 1){digitalWrite(8, HIGH);}`
   - `else{digitalWrite(8, LOW);}`
   - `if(bitRead(counter, 2) == 1){digitalWrite(11, HIGH);}`
-  - `else{digitalWrite(11, LOW); //LED 3 off}`
+  - `else{digitalWrite(11, LOW);}`
 
 
 
