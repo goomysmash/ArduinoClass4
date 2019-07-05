@@ -77,7 +77,44 @@
 - Tasks such as debouncing push buttons can be done with state machines
 - The best part about state machines: No delay()'s required!
 
+## Bonus: Combining the code from this class and Class 2 to make a debounced 3 LED clicker counter
 
+### 10. Copy the relevant lines of code from Class 2 (file #13)
+- Copied code lines:
+  - `pinMode(5, OUTPUT); //LED 1`
+  - `pinMode(8, OUTPUT); //LED 2`
+  - `pinMode(11, OUTPUT); //LED 3`
+  - `pinMode(4, OUTPUT); //Ground for LED 1`
+  - `pinMode(7, OUTPUT); //Ground for LED 2`
+  - `pinMode(10, OUTPUT); //Ground for LED 3`
+  - `digitalWrite(4, LOW); //Ground for LED 1 gets set low`
+  - `digitalWrite(7, LOW); //Ground for LED 2 gets set low`
+  - `digitalWrite(10, LOW); //Ground for LED 3 gets set low`
+  - `counter = counter % 8;`
+  - `Serial.print("counter: ");`
+  - `Serial.println(counter, BIN);`
+  - `if(bitRead(counter, 0) == 1){digitalWrite(5, HIGH);}`
+  - `else{digitalWrite(5, LOW);}`
+  - `if(bitRead(counter, 1) == 1){digitalWrite(8, HIGH);}`
+  - `else{digitalWrite(8, LOW);}`
+  - `if(bitRead(counter, 2) == 1){digitalWrite(11, HIGH);}`
+  - `else{digitalWrite(11, LOW); //LED 3 off}`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
 
 
 
