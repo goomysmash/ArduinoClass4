@@ -53,9 +53,9 @@
   - `Serial.println("case 1: Start the timer");`
   - `Serial.println("case 2: Read the button state");`
 - Modified line:
-  -`if (millis() - timerStart > 5){buttonSwitchState = 3;}`
+  - `if (millis() - timerStart > 5){buttonSwitchState = 3;}`
 - Modified to:
-  -`if (millis() - timerStart > 500){buttonSwitchState = 3;}`
+  - `if (millis() - timerStart > 500){buttonSwitchState = 3;}`
 - (Upload and watch the serial monitor and press the button)
 - Notice how if you press the button very quickly the program gets up to case 2 but then goes back to case 0
 - Only when you press the button for a long time (>500ms) does it actually register and say the "successful press" message
@@ -68,9 +68,9 @@
 - Let's change it back to 5ms so it acts like a normal debounced button
 ### 9. Change the 500ms comparison time to 5ms
 - Modified line:
-  -`if (millis() - timerStart > 500){buttonSwitchState = 3;}`
+  - `if (millis() - timerStart > 500){buttonSwitchState = 3;}`
 - Modified to:
-  -`if (millis() - timerStart > 5){buttonSwitchState = 3;}`
+  - `if (millis() - timerStart > 5){buttonSwitchState = 3;}`
 - (Upload and watch the serial monitor and press the button)
 
 ### Lessons learned:
